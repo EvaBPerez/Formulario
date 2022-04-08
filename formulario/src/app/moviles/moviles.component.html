@@ -11,7 +11,7 @@
     
     <h2>Lista de móviles
         <button class="button">
-            <a routerLink='movile/add/0'>Añadir móvil</a>
+            <a [routerLink]="['movile/add/0']" routerLinkActive="activo">Añadir móvil</a>
         </button>
     </h2>
 
@@ -28,7 +28,7 @@
                 <td>{{ movile.id }}</td>
                 <td>{{ movile.marca }}</td>
                 <td>{{ movile.modelo }}</td>
-                <td><a [routerLink]="['movile/edit', movile.id]">Editar</a></td>
+                <td><a [routerLink]="['movile/edit', movile.id]" routerLinkActive="activo">Editar</a></td>
                 <td><button class="button" (click)='onDelete(movile.id)'>x</button></td>
             </tr>
         </tbody>
