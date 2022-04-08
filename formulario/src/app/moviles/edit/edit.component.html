@@ -1,0 +1,18 @@
+<div>
+    <h1>Forlumario</h1>
+    <br>
+    <h2>{{ header }}</h2>
+
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <label for="">Id</label>
+        <input type="text" [ngModel]="moviles.id" name="id">
+
+        <label for="">Marca</label>
+        <input type="text" [ngModel]="moviles.marca" name="marca">
+
+        <label for="">Modelo</label>
+        <input type="text" [ngModel]="moviles.modelo" name="modelo">
+
+        <button class="button" type="submit">Añadir</button>
+    </form>
+</div>

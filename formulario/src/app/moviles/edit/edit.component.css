@@ -1,0 +1,25 @@
+h1, h2, button {
+    font-family: "Lucida Sans Unicode", 
+    "Lucida Grande", 
+    Sans-Serif;
+    color: rgb(52, 168, 112);
+}
+
+h1 {
+    background-color: rgb(184, 215, 204); 
+    text-align: center;
+}
+
+.button {
+    border-radius: 11px;
+    border: 3px double #006505;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-color: #82d284;
+    background-color: #e5f3ea;
+}
+
+.button:hover {
+    background-color: #82d284; /* Green */
+    color: white;
+}
